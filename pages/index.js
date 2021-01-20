@@ -1,12 +1,30 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+
+export const name = "Alexandre Claveau";
+export const siteTitle = "Alexandre Claveau Portfolio";
+export const description = "Développeur Frontend freelance à Brest. Je développe des sites Web, interfaces ainsi que des maquettes."
+export const url = "https://alexandre-claveau.fr"
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content={description}
+        />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={siteTitle} />
+        <meta
+          property="og:description"
+          content={description}
+        />
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content={name} />
       </Head>
 
       <main className={styles.main}>
@@ -15,7 +33,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -56,10 +74,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
