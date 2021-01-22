@@ -41,7 +41,7 @@ export default function Home() {
       <Cta></Cta>
       <Footer></Footer>
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to{" "}
           <Link href="/contact">
@@ -94,7 +94,7 @@ export default function Home() {
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
