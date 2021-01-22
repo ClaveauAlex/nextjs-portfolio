@@ -1,38 +1,39 @@
 import Head from "next/head";
-import Link from 'next/link'
+import Link from "next/link";
+import Navbar from "../components/navbar";
+import Hero from "../components/hero";
 import styles from "../styles/Home.module.css";
 
-export const name = "Alexandre Claveau";
-export const siteTitle = "Alexandre Claveau Portfolio";
-export const description = "Développeur Frontend freelance à Brest. Je développe des sites Web, interfaces ainsi que des maquettes."
-export const url = "https://alexandre-claveau.fr"
+export const informations = {
+  name: "Alexandre Claveau",
+  siteTitle: "Alexandre Claveau Portfolio",
+  description:
+    "Développeur Frontend freelance à Brest. Je développe des sites Web, interfaces ainsi que des maquettes.",
+  url: "https://alexandre-claveau.fr",
+};
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{informations.siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content={description}
-        />
+        <meta name="description" content={informations.description} />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={siteTitle} />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta property="og:url" content={url} />
-        <meta property="og:site_name" content={name} />
+        <meta property="og:title" content={informations.siteTitle} />
+        <meta property="og:description" content={informations.description} />
+        <meta property="og:url" content={informations.url} />
+        <meta property="og:site_name" content={informations.name} />
       </Head>
+      <Navbar></Navbar>
+      <Hero></Hero>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to 
+          Welcome to{" "}
           <Link href="/contact">
-            <a> Alexandre Claveau</a>
+            <a>Alexandre Claveau</a>
           </Link>
         </h1>
 
