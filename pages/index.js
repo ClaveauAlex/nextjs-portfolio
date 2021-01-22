@@ -2,6 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
+import About from "../components/about";
+import Skills from "../components/skills";
+import Experiences from "../components/experiences";
+import Testimonials from "../components/testimonials";
+import Cta from "../components/cta";
+import Footer from "../components/footer";
 import styles from "../styles/Home.module.css";
 
 export const informations = {
@@ -28,6 +34,12 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <Hero></Hero>
+      <About></About>
+      <Skills></Skills>
+      <Experiences></Experiences>
+      <Testimonials></Testimonials>
+      <Cta></Cta>
+      <Footer></Footer>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
