@@ -11,13 +11,50 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-html,
-body,
-#root {
-  height: 100%;
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 700;
 }

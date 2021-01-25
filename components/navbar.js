@@ -4,8 +4,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar() {
   return (
-    <>
-      <div>
+    <nav className={styles.container}>
+      <div className={styles.logo}>
         <Image
           src="/Logo_bubble.svg"
           alt="Logo entreprise"
@@ -13,16 +13,15 @@ export default function Navbar() {
           height={40}
         />
       </div>
-      <div>
-        <ul>
-          <li>A propos</li>
-          <li>Compétences</li>
-          <li>Expériences</li>
-        </ul>
+      <ul className={styles.links}>
+        <li>A propos</li>
+        <li>Compétences</li>
+        <li>Expériences</li>
+      </ul>
+      <div className={styles.menu}>
+        <AiOutlineMenu />
       </div>
-      <div>
-        <AiOutlineMenu/>
-      </div>
-    </>
+      <a className={styles.contact}>Me contacter</a>
+    </nav>
   );
 }

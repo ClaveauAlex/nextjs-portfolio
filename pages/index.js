@@ -33,13 +33,13 @@ export default function Home() {
         <meta property="og:site_name" content={informations.name} />
       </Head>
       <Navbar></Navbar>
-      <Hero></Hero>
+      {/* <Hero></Hero>
       <About></About>
       <Skills></Skills>
       <Experiences></Experiences>
       <Testimonials></Testimonials>
       <Cta></Cta>
-      <Footer></Footer>
+      <Footer></Footer> */}
 
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
