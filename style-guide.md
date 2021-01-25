@@ -4,6 +4,7 @@
 
 Le design de mon portfolio est fait pour les devices suivant:
 
+- Less : < 576px
 - Landscape phones : 576px
 - Tablets : 768px
 - Desktops : 992px
