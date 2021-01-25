@@ -14,6 +14,13 @@ export default function Navbar() {
         />
       </div>
       <div>
+        <ul>
+          <li>A propos</li>
+          <li>Compétences</li>
+          <li>Expériences</li>
+        </ul>
+      </div>
+      <div>
         <AiOutlineMenu/>
       </div>
     </>
