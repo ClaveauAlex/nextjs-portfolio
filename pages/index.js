@@ -35,12 +35,12 @@ export default function Home() {
       <Navbar></Navbar>
       <main className={styles.mainContainer}>
         <Hero></Hero>
-        {/* <About></About>
-      <Skills></Skills>
-      <Experiences></Experiences>
-      <Testimonials></Testimonials>
-      <Cta></Cta>
-      <Footer></Footer> */}
+        <About></About>
+        {/* <Skills></Skills>
+        <Experiences></Experiences>
+        <Testimonials></Testimonials>
+        <Cta></Cta>
+        <Footer></Footer> */}
       </main>
 
       {/* <main className={styles.main}>

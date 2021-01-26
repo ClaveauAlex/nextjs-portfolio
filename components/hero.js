@@ -3,14 +3,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className={styles.container}>
-    //TODO: Ajouter Image de décoration
+    <section className={styles.container}>
       <div className={styles.moi}>
         <Image
           src="/me-design.svg"
           alt="Alexandre Claveau"
-          width={600}
-          height={600}
+          width={700}
+          height={700}
         />
       </div>
       <div>
@@ -26,6 +25,6 @@ export default function Hero() {
           clients.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

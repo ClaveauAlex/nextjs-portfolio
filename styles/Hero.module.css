@@ -1,58 +1,61 @@
-.moi{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.moi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.subSection{
-    color: #347c90;
-    font-size: 24px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.subSection {
+  color: #347c90;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.firstSubsection{
-    font-weight: 300;
+.firstSubsection {
+  font-weight: 300;
 }
 
-.secondSubsection{
-    font-weight: 900;
+.secondSubsection {
+  font-weight: 900;
 }
 
-.bold{
-    color: #347c90;
-    font-weight: 700;
+.bold {
+  color: #347c90;
+  font-weight: 700;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .moi{
+  /* .moi{
         justify-content: flex-end;
-    }
+    } */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .moi {
+    justify-content: flex-end;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .container{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        padding: 300px 0;
-    }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 300px 0;
+  }
 
-    .moi{
-        padding: 0 0 0 80px;
-    }
+  .moi {
+    padding: 0 0 0 80px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .moi{
-        padding: 0 0 0 100px;
-    }
+  .moi {
+    padding: 0 0 0 100px;
+  }
 }

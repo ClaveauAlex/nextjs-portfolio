@@ -3,45 +3,53 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <>
-      <h3>A propos</h3>
-      <div>
-        <div>
+    <section className={styles.about}>
+      <h3 className={styles.titleSection}>A propos</h3>
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutPartOne}>
           <Image
             src="/illustration1.svg"
             alt="Illustration 1"
-            width={200}
-            height={200}
+            width={450}
+            height={450}
           />
-          <div>
-            <p>Vous êtes une entreprise ?{" "}</p>
+          <div className={styles.aboutText}>
             <p>
-              Vous cherchez à vous faire connaître sur internet ? Convertir
-              votre audience en futur clients ?{" "}
+              Vous êtes une <span className={styles.bold}>entreprise</span> ?{" "}
+            </p>
+            <p>
+              Vous cherchez à vous{" "}
+              <span className={styles.bold}>faire connaître</span> sur internet
+              ? <span className={styles.bold}>Convertir votre audience</span> en
+              futur clients ?{" "}
             </p>
             <p>
               Je m'appelle Alexandre Claveau et mon savoir-faire englobe le
-              domaine de la programmation Web et le Design. Je suis un jeune
+              domaine de la programmation{" "}
+              <span className={styles.bold}>Web</span> et le{" "}
+              <span className={styles.bold}>Design</span>. Je suis un jeune
               Breton qui n'a pas peur des challenges et qui peut être celui que
-              vous cherchez. Par mes différentes expériences, j'ai pu assister
-              des entreprises dans la réalisation de leur site Web ou dans le
-              développement d'interfaces clients. Mais pas seulement ! J'ai pu
-              également les accompagner dans leurs choix afin de leur indiquer
-              la meilleur façon d'arriver à leurs objectifs.{" "}
+              vous cherchez. Par mes différentes expériences, j'ai pu{" "}
+              <span className={styles.bold}>assister des entreprises</span> dans
+              la réalisation de leur site Web ou dans le développement
+              d'interfaces clients. Mais pas seulement ! J'ai pu également les{" "}
+              <span className={styles.bold}>accompagner</span> dans leurs choix
+              afin de leur indiquer la meilleur façon d'arriver à leurs
+              objectifs.{" "}
             </p>
           </div>
         </div>
-        <div>
+        <div className={styles.aboutPartTwo}>
           <Image
             src="/illustration2.svg"
             alt="Illustration 2"
-            width={200}
-            height={200}
+            width={450}
+            height={450}
           />
-          <div>
+          <div className={styles.aboutText}>
             <p>
               En d'autres termes, je développe votre projet en mettant en place
-              une stratégie rigoureuse :{" "}
+              une <span className={styles.bold}>stratégie rigoureuse</span> :{" "}
             </p>
             <p>
               Tout d'abord, un premier rendez-vous pour comprendre vos attentes
@@ -62,32 +70,46 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div>
+        <div className={styles.aboutPartThree}>
           <Image
             src="/illustration3.svg"
             alt="Illustration 3"
-            width={200}
-            height={200}
+            width={450}
+            height={450}
           />
-          <div>
-            <p>Alors n'hésitez pas à me contacter afin d'en discuter.{" "}</p>
+          <div className={styles.aboutText}>
             <p>
-              Si vous avez encore des doutes sur la démarche, il vous suffit de
-              regarder autour de vous. Certaines entreprises ont des sites ou
-              plateformes mal réalisés. On retrouve un grand nombre qui
-              investissent aujourd'hui beaucoup afin de développer le même
-              projet mais différemment. Ce retour arrière est généralement lié à
-              une mauvaise gestion de l'expérience utilisateur, ou un changement
-              brutale de technologies.{" "}
+              Alors n'hésitez pas à me{" "}
+              <span className={styles.bold}>contacter</span> afin d'en discuter.{" "}
             </p>
             <p>
-              Voilà pourquoi, je peux vous permettre d'augmenter votre audience
-              afin de la convertir en clients et ainsi éviter d'éventuel
-              problèmes.{" "}
+              Si vous avez encore des doutes sur la démarche, il vous suffit de
+              regarder autour de vous. Certaines entreprises ont des{" "}
+              <span className={styles.bold}>
+                sites ou plateformes mal réalisés
+              </span>
+              . On retrouve un grand nombre qui investissent aujourd'hui
+              beaucoup afin de développer le même projet mais différemment. Ce
+              retour arrière est généralement lié à une{" "}
+              <span className={styles.bold}>
+                mauvaise gestion de l'expérience utilisateur
+              </span>
+              , ou un{" "}
+              <span className={styles.bold}>
+                changement brutale de technologies
+              </span>
+              .{" "}
+            </p>
+            <p>
+              Voilà pourquoi, je peux vous permettre d'
+              <span className={styles.bold}>augmenter votre audience</span>
+              afin de la{" "}
+              <span className={styles.bold}>convertir en clients</span> et ainsi
+              éviter d'éventuel problèmes.{" "}
             </p>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
