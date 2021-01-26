@@ -32,8 +32,8 @@ export default function Home() {
         <meta property="og:url" content={informations.url} />
         <meta property="og:site_name" content={informations.name} />
       </Head>
+      <Navbar></Navbar>
       <main className={styles.mainContainer}>
-        <Navbar></Navbar>
         <Hero></Hero>
         {/* <About></About>
       <Skills></Skills>
