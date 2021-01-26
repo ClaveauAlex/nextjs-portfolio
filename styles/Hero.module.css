@@ -26,9 +26,6 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* .moi{
-        justify-content: flex-end;
-    } */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -43,7 +40,7 @@
   .container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 300px 0;
   }
@@ -55,7 +52,4 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .moi {
-    padding: 0 0 0 100px;
-  }
 }

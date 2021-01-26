@@ -46,24 +46,19 @@
   .aboutPartThree {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
   .aboutPartTwo{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
-
-  .aboutPartTwo > .aboutText{
-    padding-right: 40px;
-  }
-
+  
   .aboutText {
-    padding-left: 40px;
-    width: 40%;
+    width: 50%;
   }
 }
 
