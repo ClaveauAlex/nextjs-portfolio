@@ -36,8 +36,8 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <Hero></Hero>
         <About></About>
-        {/* <Skills></Skills>
-        <Experiences></Experiences>
+        <Skills></Skills>
+        {/* <Experiences></Experiences>
         <Testimonials></Testimonials>
         <Cta></Cta>
         <Footer></Footer> */}
