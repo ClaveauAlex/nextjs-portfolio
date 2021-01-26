@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className={styles.container}>
+    //TODO: Ajouter Image de décoration
       <div className={styles.moi}>
         <Image
           src="/me-design.svg"
