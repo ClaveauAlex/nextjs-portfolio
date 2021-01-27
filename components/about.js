@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.aboutContainer}>
       <h3 className={styles.titleSection}>A propos</h3>
       <div className={styles.aboutContainer}>
         <div className={styles.aboutPartOne}>
           <Image
             src="/illustration1.svg"
             alt="Illustration 1"
-            width={450}
-            height={450}
+            width={400}
+            height={400}
           />
           <div className={styles.aboutText}>
             <p>
@@ -43,8 +43,8 @@ export default function About() {
           <Image
             src="/illustration2.svg"
             alt="Illustration 2"
-            width={450}
-            height={450}
+            width={400}
+            height={400}
           />
           <div className={styles.aboutText}>
             <p>
@@ -74,8 +74,8 @@ export default function About() {
           <Image
             src="/illustration3.svg"
             alt="Illustration 3"
-            width={450}
-            height={450}
+            width={400}
+            height={400}
           />
           <div className={styles.aboutText}>
             <p>

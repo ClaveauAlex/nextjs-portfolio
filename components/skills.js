@@ -3,33 +3,46 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <section>
-      <h3>Compétences</h3>
-      <div>
-        <Image
-          src="/dev.svg"
-          alt="Icon Développement"
-          width={100}
-          height={100}
-        />
-        <h4>Développement</h4>
-        <div>
-          <p>React</p>
-          <p>CSS</p>
-          <p>Node</p>
-          <p>Express</p>
-          <p>MongoDB</p>
-          <p>Git</p>
+    <section className={styles.skillsContainer}>
+      <h3 className={styles.titleSection}>Compétences</h3>
+      <div className={styles.skills}>
+        <div className={styles.skillsElements}>
+          <div className={styles.icon}>
+            <Image
+              src="/dev.svg"
+              alt="Icon Développement"
+              width={100}
+              height={100}
+            />
+          </div>
+          <h4 className={styles.title}>Développement</h4>
+          <ul className={styles.liste}>
+            <li>React</li>
+            <li>CSS</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Git</li>
+          </ul>
         </div>
-      </div>
-      <div>
-        <Image src="/design.svg" alt="Icon Design" width={100} height={100} />
-        <h4>Design</h4>
-        <div>
-          <p>Figma</p>
-          <p>Affinity Designer</p>
-          <p>Illustrator</p>
-          <p>Photoshop</p>
+        <div className={styles.skillsElements}>
+          <div className={styles.icon}>
+            <Image
+              src="/design.svg"
+              alt="Icon Design"
+              width={100}
+              height={100}
+            />
+          </div>
+          <h4 className={styles.title}>Design</h4>
+          <ul className={styles.liste}>
+            <li>Figma</li>
+            <li>Affinity Designer</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>Maquettes</li>
+            <li>Logos</li>
+          </ul>
         </div>
       </div>
     </section>
