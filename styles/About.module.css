@@ -18,8 +18,13 @@
   font-weight: 700;
 }
 
+.image{
+  width: 50%;
+}
+
 .aboutText {
   padding-top: 60px;
+  width: 80%;
 }
 
 .aboutPartOne,
@@ -42,6 +47,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .aboutText {
+    padding-top: 0;
+  }
+
   .aboutPartOne,
   .aboutPartThree {
     display: flex;
@@ -55,6 +64,10 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .image{
+    width: 30%;
   }
   
   .aboutText {

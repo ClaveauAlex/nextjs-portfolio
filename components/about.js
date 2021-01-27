@@ -7,12 +7,14 @@ export default function About() {
       <h3 className={styles.titleSection}>A propos</h3>
       <div className={styles.aboutContainer}>
         <div className={styles.aboutPartOne}>
-          <Image
-            src="/illustration1.svg"
-            alt="Illustration 1"
-            width={400}
-            height={400}
-          />
+          <div className={styles.image}>
+            <Image
+              src="/illustration1.svg"
+              alt="Illustration 1"
+              width={400}
+              height={400}
+            />
+          </div>
           <div className={styles.aboutText}>
             <p>
               Vous êtes une <span className={styles.bold}>entreprise</span> ?{" "}
@@ -40,12 +42,14 @@ export default function About() {
           </div>
         </div>
         <div className={styles.aboutPartTwo}>
-          <Image
-            src="/illustration2.svg"
-            alt="Illustration 2"
-            width={400}
-            height={400}
-          />
+          <div className={styles.image}>
+            <Image
+              src="/illustration2.svg"
+              alt="Illustration 2"
+              width={400}
+              height={400}
+            />
+          </div>
           <div className={styles.aboutText}>
             <p>
               En d'autres termes, je développe votre projet en mettant en place
@@ -71,12 +75,14 @@ export default function About() {
           </div>
         </div>
         <div className={styles.aboutPartThree}>
-          <Image
-            src="/illustration3.svg"
-            alt="Illustration 3"
-            width={400}
-            height={400}
-          />
+          <div className={styles.image}>
+            <Image
+              src="/illustration3.svg"
+              alt="Illustration 3"
+              width={400}
+              height={400}
+            />
+          </div>
           <div className={styles.aboutText}>
             <p>
               Alors n'hésitez pas à me{" "}
