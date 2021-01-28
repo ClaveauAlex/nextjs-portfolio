@@ -39,8 +39,8 @@ export default function Home() {
         <Skills></Skills>
         <Experiences></Experiences>
         <Testimonials></Testimonials>
-        {/* <Cta></Cta>
-        <Footer></Footer> */}
+        <Cta></Cta>
+        {/* <Footer></Footer> */}
       </main>
 
       {/* <main className={styles.main}>
