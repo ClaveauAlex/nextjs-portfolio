@@ -38,8 +38,8 @@ export default function Home() {
         <About></About>
         <Skills></Skills>
         <Experiences></Experiences>
-        {/* <Testimonials></Testimonials>
-        <Cta></Cta>
+        <Testimonials></Testimonials>
+        {/* <Cta></Cta>
         <Footer></Footer> */}
       </main>
 
